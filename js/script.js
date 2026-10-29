@@ -1,12 +1,3 @@
-/*
-  Arquivo: js/script.js
-  Tema: Garagem Clássica - Carros Antigos
-  Autor: Projeto Front-End Web
-  Descrição: Manipulação do DOM com JavaScript puro. Contém as 4 estruturas básicas:
-  sequencial, condicional (if/else), repetição (for) e dados (array e objetos),
-  além de persistência de dados com localStorage e escuta de eventos.
-*/
-
 let listaCarros = [];
 
 function carregarCarros() {
