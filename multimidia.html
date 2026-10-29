@@ -1,0 +1,100 @@
+<!--
+  Arquivo: multimidia.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Mídias de Vídeo e Áudio com Controles Nativos
+  Tecnologias: HTML5 Semântico, CSS3, Bootstrap 5
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Multimídia</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .caixa-midia {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Reprodutores de Áudio e Vídeo</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <h2>Experiência Multimídia Automotiva</h2>
+    <p>
+      Sinta a vibração e a emoção dos carros clássicos através de nossos reprodutores nativos em HTML5,
+      com controles completos de reprodução, volume e tela cheia.
+    </p>
+
+    <div class="row">
+      
+      <div class="col-md-6">
+        <section class="caixa-midia shadow-sm">
+          <h3>Player de Vídeo Nativo</h3>
+          <p>Comercial histórico de lançamento do Ford Maverick GT (Brasil, 1973):</p>
+          <div class="ratio ratio-16x9">
+            <video controls width="100%">
+              <source src="video/carro_antigo.mp4" type="video/mp4">
+              Seu navegador não suporta a tag de vídeo HTML5.
+            </video>
+          </div>
+          <p class="text-muted mt-2 small">Controles nativos: play/pause, progresso, volume e modo tela cheia.</p>
+        </section>
+      </div>
+
+      <div class="col-md-6">
+        <section class="caixa-midia shadow-sm">
+          <h3>Reprodutor de Áudio Nativo</h3>
+          <p>Ouça o ronco autêntico de um motor a combustão clássico:</p>
+          <div class="p-3 bg-light rounded text-center">
+            <audio controls class="w-100">
+              <source src="audio/motor_antigo.wav" type="audio/wav">
+              Seu navegador não suporta a tag de áudio HTML5.
+            </audio>
+          </div>
+          <p class="text-muted mt-3 small">Áudio contendo o som de partida e aceleração de motor antigo.</p>
+        </section>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

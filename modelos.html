@@ -1,0 +1,112 @@
+<!--
+  Arquivo: modelos.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Modelos Famosos (Cards Horizontais com Flexbox)
+  Tecnologias: HTML5 Semântico, CSS Flexbox, Bootstrap 5
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Modelos</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .titulo-secao {
+      border-bottom: 2px solid #ea580c;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Catálogo de Modelos Famosos</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <h2 class="titulo-secao">Grandes Lendas do Asfalto</h2>
+    <p>
+      Confira os modelos clássicos mais cultuados no mundo automotivo. Todos os cartões abaixo foram organizados
+      utilizando <strong>CSS Flexbox</strong> para distribuição horizontal responsiva.
+    </p>
+
+    <div class="cartoes-container">
+      
+      <div class="cartao-item">
+        <img src="img/fusca.webp" alt="Volkswagen Fusca">
+        <h3>Volkswagen Fusca</h3>
+        <p>Lançado na década de 1930, o Fusca possui motor boxer refrigerado a ar e tração traseira. Um ícone global.</p>
+        <a href="tabela.html" class="btn btn-warning w-100">Ver Ficha Técnica</a>
+      </div>
+
+      <div class="cartao-item">
+        <img src="img/opala.jpg" alt="Chevrolet Opala SS">
+        <h3>Chevrolet Opala SS</h3>
+        <p>Primeiro carro de passeio da GM no Brasil. A versão SS com motor 6 cilindros é uma lenda nacional.</p>
+        <a href="tabela.html" class="btn btn-warning w-100">Ver Ficha Técnica</a>
+      </div>
+
+      <div class="cartao-item">
+        <img src="img/maverick.jpg" alt="Ford Maverick GT">
+        <h3>Ford Maverick GT</h3>
+        <p>Símbolo dos anos 70, o Maverick GT com seu potente motor V8 302 conquistou fãs pelo ronco inconfundível.</p>
+        <a href="tabela.html" class="btn btn-warning w-100">Ver Ficha Técnica</a>
+      </div>
+
+      <div class="cartao-item">
+        <img src="img/mustang.jpg" alt="Ford Mustang Mach 1">
+        <h3>Ford Mustang Mach 1</h3>
+        <p>Lendário muscle car americano, inaugurou a categoria pony car com visual agressivo e esportivo.</p>
+        <a href="tabela.html" class="btn btn-warning w-100">Ver Ficha Técnica</a>
+      </div>
+
+      <div class="cartao-item">
+        <img src="img/kombi.webp" alt="Volkswagen Kombi">
+        <h3>VW Kombi Corujinha</h3>
+        <p>A van multiuso mais famosa do mundo, com o clássico para-brisa bipartido dos anos 60 e 70.</p>
+        <a href="tabela.html" class="btn btn-warning w-100">Ver Ficha Técnica</a>
+      </div>
+
+      <div class="cartao-item">
+        <img src="img/dodge.jpg" alt="Dodge Charger R/T">
+        <h3>Dodge Charger R/T</h3>
+        <p>O gigante do asfalto brasileiro nos anos 70, equipado com motor V8 318 e teto de vinil marcante.</p>
+        <a href="tabela.html" class="btn btn-warning w-100">Ver Ficha Técnica</a>
+      </div>
+
+    </div>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

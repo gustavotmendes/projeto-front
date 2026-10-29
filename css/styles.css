@@ -1,0 +1,165 @@
+/*
+  Arquivo: css/styles.css
+  Tema: Garagem Clássica - Carros Antigos
+  Autor: Projeto Front-End Web
+  Descrição: Estilos essenciais com seletores de tag, classe, id, grid, flexbox, pseudo-classes e responsividade.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f6f8;
+  color: #333333;
+}
+
+header, footer {
+  background-color: #1e293b;
+  color: #ffffff;
+  padding: 15px;
+}
+
+nav {
+  background-color: #0f172a;
+  padding: 10px;
+}
+
+.menu-lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.menu-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+}
+
+.menu-link:hover {
+  background-color: #ea580c;
+  color: #ffffff;
+}
+
+.menu-link-externo {
+  color: #fef08a;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px dashed #fef08a;
+  border-radius: 4px;
+}
+
+.menu-link-externo:hover {
+  background-color: #fef08a;
+  color: #000000;
+}
+
+.container-site {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+}
+
+.cartoes-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.cartao-item {
+  flex: 1 1 300px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  padding: 15px;
+  text-align: center;
+}
+
+.cartao-item img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.galeria-item {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.campo-form {
+  margin-bottom: 12px;
+}
+
+.campo-form label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.campo-form input,
+.campo-form select,
+.campo-form textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.campo-form input:hover,
+.campo-form textarea:hover {
+  border-color: #888888;
+}
+
+.campo-form input:focus,
+.campo-form textarea:focus {
+  border-color: #0284c7;
+}
+
+.campo-form input:invalid,
+.campo-form textarea:invalid {
+  border-color: #ef4444;
+}
+
+#rodape-principal {
+  text-align: center;
+  border-top: 4px solid #ea580c;
+}
+
+#painel-destaque {
+  background-color: #e2e8f0;
+  border-left: 5px solid #0284c7;
+  padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .cartoes-container {
+    flex-direction: column;
+  }
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+  .menu-lista {
+    flex-direction: column;
+  }
+}

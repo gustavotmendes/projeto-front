@@ -1,0 +1,103 @@
+<!--
+  Arquivo: sobre.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Sobre o Projeto e Equipe de Desenvolvimento
+  Tecnologias: HTML5 Semântico, CSS3, Bootstrap 5
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Sobre o Projeto</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .cartao-sobre {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Sobre o Projeto Acadêmico</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <h2>Sobre o Projeto Front-End Web</h2>
+    <p>
+      Este website foi desenvolvido como avaliação prática da disciplina de 
+      <strong>Desenvolvimento Front-End para Web</strong> da <strong>Universidade Positivo</strong>.
+    </p>
+
+    <div class="row">
+      <div class="col-md-7">
+        <section class="cartao-sobre shadow-sm">
+          <h3 class="h4 text-primary">Objetivo Geral</h3>
+          <p>
+            Construir um portal web temático, totalmente responsivo e interativo sobre Carros Antigos (Antigomobilismo), 
+            aplicando boas práticas de desenvolvimento front-end com HTML5 Semântico, CSS3 (Grid e Flexbox), 
+            JavaScript puro para controle dinâmico do DOM e armazenamento local com localStorage, além de componentes Bootstrap.
+          </p>
+          <h3 class="h4 text-primary mt-4">Tecnologias Utilizadas</h3>
+          <ul>
+            <li><strong>HTML5:</strong> Estrutura semântica (header, nav, main, section, article, footer, video, audio).</li>
+            <li><strong>CSS3:</strong> Estilização em 3 níveis (externo, incorporado e em linha), seletores por tag, classe e ID, Grid Layout, Flexbox e Media Queries.</li>
+            <li><strong>JavaScript:</strong> Manipulação do DOM, eventos, localStorage e as 4 estruturas básicas de programação.</li>
+            <li><strong>Bootstrap 5:</strong> Componentes visuais utilitários, cards, sistema de grid e botões.</li>
+          </ul>
+        </section>
+      </div>
+
+      <div class="col-md-5">
+        <section class="cartao-sobre shadow-sm">
+          <h3 class="h4 text-primary">Dados da Equipe</h3>
+          <p><strong>Instituição:</strong> Universidade Positivo</p>
+          <p><strong>Disciplina:</strong> Projeto Front-End para Web</p>
+          <p><strong>Professor:</strong> Fabricio Olivo</p>
+          <hr>
+          <p><strong>Integrantes da Equipe:</strong></p>
+          <ul>
+            <li>Gustavo Mendes</li>
+            <li>Eduardo Costa</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

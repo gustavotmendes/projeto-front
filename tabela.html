@@ -1,0 +1,130 @@
+<!--
+  Arquivo: tabela.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Tabela Comparativa de Ficha Técnica
+  Tecnologias: HTML5 Semântico, CSS3, Bootstrap 5
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Tabela</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .titulo-tabela {
+      color: #0f172a;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Comparativo Técnico de Veículos</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <h2 class="titulo-tabela">Ficha Técnica Comparativa</h2>
+    <p>
+      Abaixo você pode analisar os dados técnicos dos principais clássicos nacionais e internacionais.
+      A tabela possui títulos de colunas e dados formatados em linhas e colunas estruturadas.
+    </p>
+
+    <div class="table-responsive">
+      <table id="tabela-comparativa" class="table table-bordered table-striped table-hover">
+        <thead>
+          <tr class="table-dark">
+            <th>Modelo</th>
+            <th>Fabricante</th>
+            <th>Ano</th>
+            <th>Motor</th>
+            <th>Potência (cv)</th>
+            <th>Velocidade Máxima</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Fusca 1300</strong></td>
+            <td>Volkswagen</td>
+            <td>1968</td>
+            <td>1.3L 4 cil. Boxer a ar</td>
+            <td>46 cv</td>
+            <td>120 km/h</td>
+          </tr>
+          <tr>
+            <td><strong>Opala SS</strong></td>
+            <td>Chevrolet</td>
+            <td>1974</td>
+            <td>4.1L 6 cil. em linha</td>
+            <td>171 cv</td>
+            <td>190 km/h</td>
+          </tr>
+          <tr>
+            <td><strong>Maverick GT</strong></td>
+            <td>Ford</td>
+            <td>1976</td>
+            <td>5.0L V8 302</td>
+            <td>197 cv</td>
+            <td>185 km/h</td>
+          </tr>
+          <tr>
+            <td><strong>Mustang Mach 1</strong></td>
+            <td>Ford</td>
+            <td>1969</td>
+            <td>5.8L V8 351 Windsor</td>
+            <td>290 cv</td>
+            <td>210 km/h</td>
+          </tr>
+          <tr>
+            <td><strong>Charger R/T</strong></td>
+            <td>Dodge</td>
+            <td>1975</td>
+            <td>5.2L V8 318</td>
+            <td>215 cv</td>
+            <td>195 km/h</td>
+          </tr>
+          <tr>
+            <td><strong>Kombi 1500</strong></td>
+            <td>Volkswagen</td>
+            <td>1972</td>
+            <td>1.5L 4 cil. Boxer a ar</td>
+            <td>52 cv</td>
+            <td>110 km/h</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

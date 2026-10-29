@@ -1,0 +1,121 @@
+<!--
+  Arquivo: cadastro.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Minha Garagem Virtual (Cadastro com LocalStorage)
+  Tecnologias: HTML5 Semântico, Bootstrap 5, JavaScript Puro com LocalStorage
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Minha Garagem</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .cartao-cadastro {
+      background-color: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Gerenciamento da Coleção Virtual</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <h2>Minha Garagem Virtual</h2>
+    <p>
+      Cadastre os carros antigos que você possui ou sonha em colecionar. Os dados são salvos no seu navegador 
+      utilizando <strong>localStorage</strong> e não serão perdidos ao recarregar a página!
+    </p>
+
+    <div class="cartao-cadastro shadow-sm">
+      <h3 class="h4 mb-3">Cadastrar Novo Veículo</h3>
+      
+      <form id="form-cadastro-carro">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cad-modelo" class="form-label">Modelo do Veículo:</label>
+            <input type="text" id="cad-modelo" class="form-control" placeholder="Ex: Opala Comodoro" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="cad-marca" class="form-label">Marca / Fabricante:</label>
+            <input type="text" id="cad-marca" class="form-control" placeholder="Ex: Chevrolet" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <label for="cad-ano" class="form-label">Ano de Fabricação:</label>
+            <input type="number" id="cad-ano" class="form-control" placeholder="Ex: 1978" min="1900" max="1995" required>
+          </div>
+
+          <div class="col-md-6 mb-3">
+            <label for="cad-cor" class="form-label">Cor Principal:</label>
+            <input type="text" id="cad-cor" class="form-control" placeholder="Ex: Preto Nobre" required>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Adicionar à Coleção</button>
+        <button type="reset" class="btn btn-secondary">Limpar Campos</button>
+      </form>
+    </div>
+
+    <section class="mt-4">
+      <h3 class="h4 mb-3">Veículos Cadastrados na Garagem</h3>
+      <div class="table-responsive">
+        <table class="table table-bordered table-hover bg-white">
+          <thead class="table-dark">
+            <tr>
+              <th>Modelo</th>
+              <th>Marca</th>
+              <th>Ano</th>
+              <th>Cor</th>
+              <th>Ações</th>
+            </tr>
+          </thead>
+          <tbody id="tabela-corpo-carros">
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

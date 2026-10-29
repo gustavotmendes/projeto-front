@@ -1,0 +1,115 @@
+<!--
+  Arquivo: galeria.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Galeria de Fotos e Imagens Clássicas
+  Tecnologias: HTML5 Semântico, CSS Grid Layout, Bootstrap 5
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Galeria</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .legenda-foto {
+      font-weight: bold;
+      color: #1e293b;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Galeria de Imagens em CSS Grid</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <h2>Galeria de Veículos Históricos</h2>
+    <p>
+      Esta galeria foi construída utilizando o recurso de <strong>CSS Grid Layout</strong>, permitindo uma 
+      distribuição organizada em colunas que se adaptam automaticamente para dispositivos móveis.
+    </p>
+
+    <section class="galeria-grid">
+      
+      <div class="galeria-item">
+        <img src="img/fusca.webp" alt="Volkswagen Fusca 1968">
+        <p class="legenda-foto">Volkswagen Fusca (1968)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/opala.jpg" alt="Chevrolet Opala SS 1974">
+        <p class="legenda-foto">Chevrolet Opala SS (1974)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/maverick.jpg" alt="Ford Maverick GT 1976">
+        <p class="legenda-foto">Ford Maverick GT (1976)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/mustang.jpg" alt="Ford Mustang Mach 1 1969">
+        <p class="legenda-foto">Ford Mustang Mach 1 (1969)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/kombi.webp" alt="VW Kombi 1972">
+        <p class="legenda-foto">VW Kombi Corujinha (1972)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/dodge.jpg" alt="Dodge Charger 1975">
+        <p class="legenda-foto">Dodge Charger R/T (1975)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/corvette.jpg" alt="Corvette Stingray 1963">
+        <p class="legenda-foto">Corvette Stingray (1963)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/chevette.webp" alt="Chevette Tubarão 1973">
+        <p class="legenda-foto">Chevette Tubarão (1973)</p>
+      </div>
+
+      <div class="galeria-item">
+        <img src="img/banner_home.svg" alt="Coleção Garagem Clássica">
+        <p class="legenda-foto">Acervo Garagem Clássica</p>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!--
+  Arquivo: index.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Página Inicial (Home)
+  Tecnologias: HTML5 Semântico, CSS3, Bootstrap 5 e JS
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Início</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .destaque-home {
+      background-color: #f1f5f9;
+      border-radius: 8px;
+      padding: 25px;
+      margin-bottom: 25px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">O mundo dos carros antigos</span>
+    </div>
+  </header>
+
+  <nav>
+    <div class="container">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container my-4">
+    
+    <div class="text-center mb-4">
+      <img src="img/banner_home.svg" alt="Banner Garagem Clássica" class="img-fluid rounded shadow-sm">
+    </div>
+
+    <section class="destaque-home">
+      <h2>Bem-vindo à Garagem Clássica!</h2>
+      <p>
+        Seja bem-vindo ao portal dedicado à preservação e admiração dos veículos históricos que marcaram época. 
+        Aqui você encontra informações sobre modelos clássicos, curiosidades da indústria automobilística, 
+        galerias de fotos, sons autênticos de motores e muito mais.
+      </p>
+      <div class="alert alert-info" role="alert">
+        Dica: Acesse nossa página de <strong>Garagem</strong> para cadastrar seus carros clássicos favoritos!
+      </div>
+    </section>
+
+    <section>
+      <h2 class="mb-3">Destaques da Nossa Coleção</h2>
+      <div class="row">
+        
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/fusca.webp" class="card-img-top" alt="Volkswagen Fusca">
+            <div class="card-body">
+              <h5 class="card-title">Volkswagen Fusca</h5>
+              <p class="card-text">O carro mais popular e carismático de todos os tempos, símbolo de robustez.</p>
+              <a href="modelos.html" class="btn btn-primary">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/opala.jpg" class="card-img-top" alt="Chevrolet Opala">
+            <div class="card-body">
+              <h5 class="card-title">Chevrolet Opala</h5>
+              <p class="card-text">Um dos maiores ícones do automobilismo brasileiro com motor 6 cilindros.</p>
+              <a href="modelos.html" class="btn btn-primary">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-3">
+          <div class="card h-100 shadow-sm">
+            <img src="img/mustang.jpg" class="card-img-top" alt="Ford Mustang">
+            <div class="card-body">
+              <h5 class="card-title">Ford Mustang</h5>
+              <p class="card-text">O lendário muscle car americano com visual agressivo e potência de sobra.</p>
+              <a href="modelos.html" class="btn btn-primary">Ver Mais</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

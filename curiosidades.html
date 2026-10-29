@@ -1,0 +1,124 @@
+<!--
+  Arquivo: curiosidades.html
+  Tema: Garagem Clássica - Carros Antigos
+  Página: Curiosidades sobre Veículos Antigos
+  Tecnologias: HTML5 Puro, CSS3 Puro e JavaScript Puro (Sem Frameworks)
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Garagem Clássica - Curiosidades</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .item-curiosidade {
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      padding: 15px;
+      margin-bottom: 15px;
+      border-radius: 6px;
+    }
+    .destaque-numero {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      background-color: #ea580c;
+      color: #ffffff;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 28px;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 0 auto;">
+      <h1>Garagem Clássica</h1>
+      <span style="color: #cbd5e1; font-size: 14px;">Página 100% Pura (HTML, CSS e JS)</span>
+    </div>
+  </header>
+
+  <nav>
+    <div style="max-width: 1100px; margin: 0 auto;">
+      <ul class="menu-lista">
+        <li><a class="menu-link" href="index.html">Início</a></li>
+        <li><a class="menu-link" href="historia.html">História</a></li>
+        <li><a class="menu-link" href="curiosidades.html">Curiosidades</a></li>
+        <li><a class="menu-link" href="modelos.html">Modelos</a></li>
+        <li><a class="menu-link" href="galeria.html">Galeria</a></li>
+        <li><a class="menu-link" href="tabela.html">Tabela</a></li>
+        <li><a class="menu-link" href="multimidia.html">Multimídia</a></li>
+        <li><a class="menu-link" href="cadastro.html">Garagem</a></li>
+        <li><a class="menu-link" href="contato.html">Contato</a></li>
+        <li><a class="menu-link" href="sobre.html">Sobre</a></li>
+        <li><a class="menu-link-externo" href="https://www.fbva.org.br" target="_blank">FBVA Oficial</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container-site">
+    
+    <h2>Fatos Curiosos do Mundo Automotivo</h2>
+    <p>
+      Descubra histórias inusitadas e curiosidades fascinantes que marcaram o surgimento e a trajetória dos veículos mais amados da história.
+    </p>
+
+    <article class="item-curiosidade">
+      <h3><span class="destaque-numero">1</span> Por que o Ford Modelo T era só preto?</h3>
+      <p>
+        Henry Ford dizia: "O cliente pode ter o carro da cor que quiser, desde que seja preto". 
+        A razão era técnica e financeira: a tinta preta secava muito mais rápido que as outras cores na época, 
+        acelerando a linha de produção.
+      </p>
+    </article>
+
+    <article class="item-curiosidade">
+      <h3><span class="destaque-numero">2</span> O Fusca e o Lago</h3>
+      <p>
+        O Volkswagen Fusca original tinha a parte inferior do chassi tão vedada que conseguia boiar temporariamente 
+        na água por alguns minutos antes de afundar!
+      </p>
+    </article>
+
+    <article class="item-curiosidade">
+      <h3><span class="destaque-numero">3</span> A Origem do Nome Opala</h3>
+      <p>
+        O nome "Opala" é uma junção criativa de "Opel" (montadora alemã da General Motors que inspirou o projeto) 
+        com a pedra preciosa "Opala", simbolizando beleza e sofisticação.
+      </p>
+    </article>
+
+    <div style="margin-top: 25px; padding: 15px; background-color: #f1f5f9; border-radius: 6px;">
+      <h3 style="margin-top: 0;">Curiosidade Secreta</h3>
+      <p id="texto-secreto" style="display: none; color: #0284c7; font-weight: bold;">
+        O primeiro limpador de para-brisa foi inventado por uma mulher, Mary Anderson, em 1903, após notar que motoristas tinham que abrir o vidro na neve!
+      </p>
+      <button id="botao-revelar" onclick="revelarCuriosidade()" style="background-color: #ea580c; color: #ffffff; border: none; padding: 10px 20px; font-size: 15px; border-radius: 4px; cursor: pointer;">Revelar Curiosidade</button>
+    </div>
+
+  </main>
+
+  <footer id="rodape-principal">
+    <p>Projeto Front-End Web - Garagem Clássica &copy; 2026. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function revelarCuriosidade() {
+      let elemento = document.getElementById("texto-secreto");
+      let botao = document.getElementById("botao-revelar");
+      if (elemento.style.display === "none") {
+        elemento.style.display = "block";
+        botao.textContent = "Ocultar Curiosidade";
+      } else {
+        elemento.style.display = "none";
+        botao.textContent = "Revelar Curiosidade";
+      }
+    }
+  </script>
+
+</body>
+</html>
