@@ -1,12 +1,12 @@
-# Garagem Clássica - Portal de Carros Antigos 🚗
+# Garagem Clássica - Portal de Carros Antigos
 
-Projeto acadêmico desenvolvido para a disciplina **DFEW.08 – Projeto Front-End para Web** da **Universidade Positivo**.
+Projeto acadêmico desenvolvido para a disciplina **Desenvolvimento Front-End Para Web** da **Universidade Positivo**.
 
 Professor: Fabricio Olivo (<fabricio@up.edu.br>)
 
 ---
 
-## 📁 Estrutura de Pastas e Arquivos
+## Estrutura de Pastas e Arquivos
 
 ```text
 projeto-front/
@@ -36,7 +36,7 @@ projeto-front/
 
 ---
 
-## 🚀 Como Executar Offline
+## Como Executar Offline
 
 1. Baixe ou clone o repositório.
 2. Dê um duplo clique no arquivo `index.html` na raiz da pasta.
