@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentação Acadêmica - Garagem Clássica</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333333;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #ffffff;
+    }
+    h1, h2, h3, h4 {
+      color: #1e293b;
+    }
+    h1 {
+      border-bottom: 3px solid #ea580c;
+      padding-bottom: 10px;
+    }
+    h2 {
+      border-bottom: 1px solid #cbd5e1;
+      padding-bottom: 6px;
+      margin-top: 30px;
+    }
+    .capa {
+      text-align: center;
+      padding: 40px 0;
+      border-bottom: 2px dashed #94a3b8;
+      margin-bottom: 30px;
+    }
+    .capa h1 {
+      border: none;
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+    .dados-equipe {
+      font-size: 15px;
+      color: #475569;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    th, td {
+      border: 1px solid #cbd5e1;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f5f9;
+    }
+    code {
+      background-color: #f1f5f9;
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: Consolas, monospace;
+      color: #b91c1c;
+    }
+    pre {
+      background-color: #0f172a;
+      color: #f8fafc;
+      padding: 15px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    pre code {
+      background: none;
+      color: inherit;
+    }
+    a {
+      color: #0284c7;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="capa">
+    <h2>UNIVERSIDADE POSITIVO</h2>
+    <h3>DESENVOLVIMENTO FRONT-END PARA WEB</h3>
+    <h1>DOCUMENTAÇÃO DE PROJETO: GARAGEM CLÁSSICA</h1>
+    <p class="dados-equipe">
+      <strong>Professor:</strong> Fabricio Olivo (fabricio@up.edu.br)<br>
+      <strong>Equipe:</strong> Gustavo Mendes e Eduardo Costa<br>
+      <strong>Tema:</strong> Portal de Carros Antigos (Antigomobilismo)
+    </p>
+  </div>
+
+  <h2>1. Tema Escolhido e Objetivos do Site</h2>
+  <p>
+    O tema escolhido para o projeto foi <strong>Carros Antigos (Antigomobilismo)</strong>. O website aborda veículos históricos
+    nacionais e internacionais que marcaram gerações, resgatando a memória de clássicos como o Volkswagen Fusca, Chevrolet Opala,
+    Ford Maverick e Ford Mustang.
+  </p>
+  <p>
+    <strong>Objetivo Geral:</strong> Desenvolver um site web responsivo, interativo e com suporte a funcionamento 100% offline,
+    composto por 10 páginas navegáveis interligadas, cumprindo todos os requisitos estabelecidos no plano de ensino.
+  </p>
+
+  <h2>2. Ferramentas e Recursos de Suporte</h2>
+  <ul>
+    <li><a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a>: Ambiente de desenvolvimento de código-fonte.</li>
+    <li><a href="https://github.com/" target="_blank">GitHub</a>: Repositório para versionamento e disponibilização pública do código.</li>
+    <li><a href="https://developer.mozilla.org/pt-BR/" target="_blank">MDN Web Docs</a>: Referência técnica de padrões HTML5, CSS3 e DOM API.</li>
+    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a>: Consulta de atributos de validação nativa de formulários.</li>
+    <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap 5</a>: Framework utilitário utilizado em modo offline (arquivos locais).</li>
+  </ul>
+
+  <h2>3. Linguagens e Tecnologias Empregadas</h2>
+  <ul>
+    <li><strong>HTML5 Semântico:</strong> Estruturação com <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;video controls&gt;</code> e <code>&lt;audio controls&gt;</code>.</li>
+    <li><strong>CSS3:</strong> Estilização em 3 níveis (externo, incorporado e em linha), seletores de tag, classe e ID, Grid Layout e Flexbox.</li>
+    <li><strong>JavaScript Puro:</strong> Manipulação dinâmica do DOM, manipulação de eventos e armazenamento persistente com <code>localStorage</code>.</li>
+  </ul>
+
+  <h2>4. Sites de Referência (Inspiração)</h2>
+  <ul>
+    <li><a href="https://www.fbva.org.br/" target="_blank">Federação Brasileira de Veículos Antigos (FBVA)</a></li>
+    <li><a href="https://petrolicious.com/" target="_blank">Petrolicious</a> - Fotografia e cultura de clássicos</li>
+    <li><a href="http://museudoautomovel.org.br/" target="_blank">Museu do Automóvel de Curitiba</a></li>
+  </ul>
+
+  <h2>5. Divisão de Tarefas entre os Integrantes</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Integrante</th>
+        <th>Responsabilidades Principais</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Gustavo Mendes</strong></td>
+        <td>Arquitetura de pastas, código HTML5 semântico das páginas, codificação do JavaScript em <code>js/script.js</code> (DOM, eventos e <code>localStorage</code>) e layout responsivo.</td>
+      </tr>
+      <tr>
+        <td><strong>Eduardo Costa</strong></td>
+        <td>Pesquisa histórica e técnica dos veículos, curadoria dos arquivos de mídia e ilustrações vetoriais, redação da documentação acadêmica e preparação do roteiro de apresentação oral.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>6. Dificuldades Encontradas e Soluções</h2>
+  <p>
+    <strong>Garantia de Funcionamento Offline:</strong> O maior cuidado foi assegurar que todo o projeto funcione a partir do arquivo <code>index.html</code> sem depender de internet. Todos os arquivos de estilo (Bootstrap) e mídias (vídeo, áudio e ilustrações) foram baixados e salvos nas subpastas locais do projeto.
+  </p>
+
+  <h2>7. Estudo de UX, UI e Usabilidade</h2>
+  <ul>
+    <li><strong>UX:</strong> Navegação clara e consistente através do menu superior presente em todas as 10 páginas; feedback claro em formulários.</li>
+    <li><strong>UI:</strong> Paleta de cores com base no Azul Petróleo (<code>#1e293b</code>) e Laranja Retrô (<code>#ea580c</code>) para transmitir solidez e herança automobilística.</li>
+    <li><strong>Usabilidade:</strong> Validações nativas com mensagens intuitivas do navegador, prevenção de preenchimento incorreto e botões claros de ação.</li>
+  </ul>
+
+  <h2>8. Mapa do Site (10 Páginas)</h2>
+  <ol>
+    <li><code>index.html</code>: Página Inicial com banner e destaques.</li>
+    <li><code>historia.html</code>: História do automóvel (HTML e CSS Puros).</li>
+    <li><code>curiosidades.html</code>: Fatos curiosos com botão interativo (HTML, CSS e JS Puros).</li>
+    <li><code>modelos.html</code>: Modelos famosos com cartões horizontais em CSS Flexbox.</li>
+    <li><code>galeria.html</code>: Galeria de fotos e ilustrações com CSS Grid Layout.</li>
+    <li><code>tabela.html</code>: Ficha técnica comparativa (tabela 6x6).</li>
+    <li><code>multimidia.html</code>: Player de vídeo e áudio nativos com controles.</li>
+    <li><code>cadastro.html</code>: Garagem virtual com formulário e salvamento no <code>localStorage</code>.</li>
+    <li><code>contato.html</code>: Formulário de contato com validações nativas e pseudo-classes estilizadas.</li>
+    <li><code>sobre.html</code>: Informações acadêmicas da disciplina e integrantes.</li>
+  </ol>
+
+  <h2>9. Aplicações de JavaScript</h2>
+  <p>
+    No arquivo <code>js/script.js</code> foram implementadas:
+  </p>
+  <ul>
+    <li><strong>4 Estruturas Básicas:</strong> Sequencial (execução passo a passo), Condicional (<code>if/else</code>), Repetição (<code>for</code>) e Dados (<code>Array</code> de objetos).</li>
+    <li><strong>Manipulação do DOM:</strong> Criação dinâmica de linhas e células de tabela com <code>document.createElement</code> e <code>appendChild</code>.</li>
+    <li><strong>Armazenamento com localStorage:</strong> Salva a coleção do usuário com <code>localStorage.setItem</code> e recupera com <code>localStorage.getItem</code>, persistindo os dados mesmo após reiniciar o navegador.</li>
+  </ul>
+
+</body>
+</html>
